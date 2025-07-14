@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard | Salma</title>
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h1>Dashboard Admin</h1>
+    <div class="controls">
+      <select id="lang-switch">
+        <option value="fr">FR</option>
+        <option value="en">EN</option>
+      </select>
+      <button id="mode-toggle">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Modifier les Infos -->
+    <section class="admin-section">
+      <h2 class="trans" data-fr="Modifier les informations" data-en="Edit Profile Info">Modifier les informations</h2>
+      <form>
+        <input type="text" placeholder="Nom complet" value="SABIR SALMA" />
+        <textarea placeholder="À propos de moi">Jeune lauréat motivé avec un diplôme Bac+3...</textarea>
+        <button type="submit">Enregistrer</button>
+      </form>
+    </section>
+
+    <!-- Ajouter Projet -->
+    <section class="admin-section">
+      <h2 class="trans" data-fr="Ajouter un projet" data-en="Add a Project">Ajouter un projet</h2>
+      <form>
+        <input type="text" placeholder="Titre du projet" />
+        <textarea placeholder="Description du projet"></textarea>
+        <input type="file" />
+        <button type="submit">Ajouter</button>
+      </form>
+    </section>
+
+    <!-- Ajouter Compétence -->
+    <section class="admin-section">
+      <h2 class="trans" data-fr="Ajouter une compétence" data-en="Add Skill">Ajouter une compétence</h2>
+      <form>
+        <input type="text" placeholder="Compétence" />
+        <button type="submit">Ajouter</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
